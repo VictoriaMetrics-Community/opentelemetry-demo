@@ -5,10 +5,10 @@
 apiVersion: 1
 
 datasources:
-  - name: Jaeger
+  - name: VictoriaTraces
     uid: webstore-traces
     type: jaeger
-    url: http://jaeger:16686/jaeger/ui
+    url: http://victoriatraces:10428/select/jaeger
     editable: true
     isDefault: false
     jsonData:
