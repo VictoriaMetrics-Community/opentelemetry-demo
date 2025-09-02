@@ -13,6 +13,14 @@
 [![OpenSSF Scorecard for opentelemetry-demo](https://api.scorecard.dev/projects/github.com/open-telemetry/opentelemetry-demo/badge)](https://scorecard.dev/viewer/?uri=github.com/open-telemetry/opentelemetry-demo)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/9247/badge)](https://www.bestpractices.dev/en/projects/9247)
 
+## Version for VictoriaMetrics Stack
+
+It's a fork of the [OpenTelemetry demo](https://github.com/open-telemetry/opentelemetry-demo) that provides opentelemetry-instrumented demo applications using [VictoriaMetrics Stack](https://victoriametrics.com/):
+
+- [VictoriaMetrics](https://docs.victoriametrics.com/victoriametrics/) instead of Prometheus
+- [VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) instead of OpenSearch
+- [VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) instead of Jaeger
+
 ## Welcome to the OpenTelemetry Astronomy Shop Demo
 
 This repository contains the OpenTelemetry Astronomy Shop, a microservice-based
@@ -45,6 +53,12 @@ You can be up and running with the demo in a few minutes. Check out the docs for
 your preferred deployment method:
 
 - [Docker](https://opentelemetry.io/docs/demo/docker_deployment/)
+
+Start the demo:
+
+```
+make start
+```
 
 ## Documentation
 
