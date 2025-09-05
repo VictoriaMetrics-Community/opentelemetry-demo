@@ -972,59 +972,6 @@
       ],
       "title": "Quote Service batch span processor",
       "type": "timeseries"
-    },
-    {
-      "collapsed": false,
-      "gridPos": {
-        "h": 1,
-        "w": 24,
-        "x": 0,
-        "y": 38
-      },
-      "id": 23,
-      "panels": [],
-      "title": "Service Dependency",
-      "type": "row"
-    },
-    {
-      "datasource": {
-        "type": "jaeger",
-        "uid": "webstore-traces"
-      },
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 18,
-        "w": 24,
-        "x": 0,
-        "y": 39
-      },
-      "id": 22,
-      "options": {
-        "edges": {
-          "mainStatUnit": "requests"
-        },
-        "nodes": {
-          "arcs": [],
-          "mainStatUnit": ""
-        },
-        "zoomMode": "cooperative"
-      },
-      "pluginVersion": "11.5.2",
-      "targets": [
-        {
-          "datasource": {
-            "type": "jaeger",
-            "uid": "webstore-traces"
-          },
-          "queryType": "dependencyGraph",
-          "refId": "A"
-        }
-      ],
-      "title": "Service Dependency",
-      "type": "nodeGraph"
     }
   ],
   "preload": false,
