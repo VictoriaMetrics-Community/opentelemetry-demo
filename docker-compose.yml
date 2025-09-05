@@ -847,7 +847,7 @@ services:
     deploy:
       resources:
         limits:
-          memory: 300M
+          memory: 500M
     restart: unless-stopped
     ports:
       - "${VICTORIATRACES_PORT}:${VICTORIATRACES_PORT}"
