@@ -8,8 +8,8 @@ http {
     include mime.types;
     sendfile on;
     server {
-        listen ${JAEGER_PORT};
-        listen [::]:${JAEGER_PORT};
+        listen ${JAEGER_UI_PORT};
+        listen [::]:${JAEGER_UI_PORT};
 
         server_name _;
 

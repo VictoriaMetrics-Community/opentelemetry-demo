@@ -19,9 +19,9 @@ USER 101
 COPY src/jaeger/ui/ /ui/
 COPY src/jaeger/nginx.conf.template /nginx.conf.template
 
-EXPOSE ${JAEGER_PORT}
+EXPOSE ${JAEGER_UI_PORT}
 
 STOPSIGNAL SIGQUIT
 
 # Start nginx
-CMD ["/bin/sh" , "-c" , "envsubst '$JAEGER_PORT' < /nginx.conf.template > /etc/nginx/nginx.conf && cat  /etc/nginx/nginx.conf && exec nginx -g 'daemon off;'"]
+CMD ["/bin/sh" , "-c" , "envsubst '$JAEGER_UI_PORT' < /nginx.conf.template > /etc/nginx/nginx.conf && cat  /etc/nginx/nginx.conf && exec nginx -g 'daemon off;'"]
