@@ -935,6 +935,7 @@ services:
       - "--retentionPeriod=8w"
       - "--storageDataPath=/vt-storage"
       - "--httpListenAddr=:${VICTORIATRACES_PORT}"
+      - "--servicegraph.enableTask=true"
     deploy:
       resources:
         limits:
