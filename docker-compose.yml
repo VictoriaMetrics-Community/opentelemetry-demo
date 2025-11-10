@@ -901,10 +901,11 @@ services:
       - "--storageDataPath=/vm-storage"
       - "--httpListenAddr=:${VICTORIAMETRICS_PORT}"
       - "--opentelemetry.usePrometheusNaming=true"
+      - "--enableMetadata=true"
     deploy:
       resources:
         limits:
-          memory: 300M
+          memory: 500M
     restart: unless-stopped
     ports:
       - "${VICTORIAMETRICS_PORT}:${VICTORIAMETRICS_PORT}"
@@ -921,7 +922,7 @@ services:
     deploy:
       resources:
         limits:
-          memory: 300M
+          memory: 500M
     restart: unless-stopped
     ports:
       - "${VICTORIALOGS_PORT}:${VICTORIALOGS_PORT}"
