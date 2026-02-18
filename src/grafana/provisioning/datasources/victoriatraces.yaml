@@ -19,4 +19,4 @@ datasources:
         filterByTraceID: true
         filterBySpanID: true
         customQuery: true
-        query: traceId:"$${__trace.traceId}" AND spanId:"$${__span.spanId}"
+        query: trace_id:="$${__trace.traceId}" AND span_id:="$${__span.spanId}"
