@@ -21,6 +21,12 @@ It's a fork of the [OpenTelemetry demo](https://github.com/open-telemetry/opente
 - [VictoriaLogs](https://docs.victoriametrics.com/victorialogs/) instead of OpenSearch
 - [VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) instead of Jaeger
 
+Once the demo is running, you can access:
+
+- VictoriaMetrics at <http://localhost:8428>
+- VictoriaLogs at <http://localhost:9428>
+- VictoriaTraces at <http://localhost:10428>
+
 ## Welcome to the OpenTelemetry Astronomy Shop Demo
 
 This repository contains the OpenTelemetry Astronomy Shop, a microservice-based
